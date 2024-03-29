@@ -60,7 +60,7 @@ def search_food(key):
     next_btn = driver.find_elements(By.CSS_SELECTOR, '.zRM9F> a')
 
     # dictionary 생성
-    shop_dict = {'주차장정보': []}
+    shop_dict = {'가게정보': []}
     # 시작시간
     start = time.time()
     print('[크롤링 시작...]')
@@ -84,7 +84,7 @@ def search_food(key):
             sleep(1)
             try:
 
-                # (3) 주차장명 가져오기
+                # (3) 가게명 가져오기
                 shop_name = str(names[data].text)
                 print(shop_name)
 
